@@ -8,6 +8,8 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install poetry && poetry install
       - run: poetry run pytest
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
   build:
     needs: test
     runs-on: ubuntu-latest
