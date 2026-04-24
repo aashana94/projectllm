@@ -2,7 +2,7 @@
 
 A conversational AI chat application built with FastAPI, served via a clean dark-themed frontend, and powered by a free LLM through OpenRouter.
 
-![Chat UI](docs/screenshot.png)
+![Chat UI](my-api/docs/Screenshot.png)
 
 ---
 
