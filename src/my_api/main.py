@@ -13,7 +13,7 @@ from openai import OpenAI
 load_dotenv()
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="src/my_api/static"), name="static")
+# app.mount("/static", StaticFiles(directory="src/my_api/static"), name="static")
 client = OpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
@@ -50,6 +50,3 @@ async def chat(message: Message):
 # async def process(item_id: int, tasks: BackgroundTasks):
 #     tasks.add_task(slow_job, item_id)
 #     return {"status": "queued", "id": item_id}
-
-
-
