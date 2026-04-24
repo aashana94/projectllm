@@ -1,5 +1,5 @@
 from httpx import AsyncClient
-from my_api.main import app
+from src.my_api.main import app
 
 async def test_process():
     async with AsyncClient(app=app, base_url="http://test") as client:
